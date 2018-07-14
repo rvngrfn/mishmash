@@ -1,27 +1,22 @@
-class ShoppingCart{
-    constructor(cart, items){
+function ShoppingCart(cart, items){
         this.cart = cart
         this.items = items;
 
-    }
-
-    addItem(){
+    ShoppingCart.addItem= function(){
         this.cart.this.items.push(item)
     }
-    clear(){
+    ShoppingCart.clear= function(){
         this.cart.this.items = []
     }
-    clone() {
+    ShoppingCart.clone= function() {
         clonedCart = {}
         for (keys in this.cart)
         keys.forEach(function (key) {
-          this.cart[key] = clonedCart[key];
+            this.cart[key] = clonedCart[key];
         });
         return clonedCart;
     }
-
 }
-
 
 
  
